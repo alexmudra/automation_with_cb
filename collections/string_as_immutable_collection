@@ -1,0 +1,19 @@
+#https://colab.research.google.com/drive/1e7auv1jBFWzXd1jM1PO-MBUN7QbXrNyC#scrollTo=cJdpgI_NJlou
+from pprint import pprint
+
+
+str1 = "Good tea"
+for i in str1:
+    print(i, "-")
+
+
+print(str1[1:]) #slice - output ood tea
+
+
+
+#convert string to other collection
+str_coll = list(str1)
+pprint(str_coll) #output ['G', 'o', 'o', 'd', ' ', 't', 'e', 'a']
+
+str_split = str1.split(" ")
+print(str_split) #output ['Good', 'tea'] - розділювальний символ може бути будь яким. Навіть літера

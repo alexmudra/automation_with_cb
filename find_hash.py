@@ -7,4 +7,3 @@ print(s.__hash__()) #output 39140704
 a = (1, 3, 9)
 print(a.__hash__()) #output 1937534413
 
-
