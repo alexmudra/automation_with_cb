@@ -1,3 +1,22 @@
+#Function is an object
+def congrats(): #імя фукції congrats є звичайною змінною
+    print("Good mood")
+#1
+congrats() #Good mood
+#2
+congrats #Якщо посто визвати функцію без (), то отримаємо Out[16]: <function __main__.congrats()>
+#3
+# якщо визвати congrats.__name__, то можна отримати імя фукції congrats
+#4
+#smth = congrats #в перемінній smth зіслалися на обєкт фукції який = congrats
+#якщо визвати smth() в пайтонконсолі, то отримаємо Good mood
+
+
+
+print("#######")
+
+
+
 # Call with positional parameters
 # Positional parameters are those which are putted by values. To which parameter bypass the value is decided by the place in the order of parameter definition in the function signature.
 
