@@ -1,4 +1,4 @@
-#Function is an object
+#Function is an object класу function
 def congrats(): #імя фукції congrats є звичайною змінною
     print("Good mood")
 #1
