@@ -1,3 +1,4 @@
+#https://www.youtube.com/watch?v=UDthAJmD3EQ
 import requests
 
 # map function - приймає як параметр фукцію як обєкт
@@ -46,5 +47,17 @@ capital_lettered_quotes()
 #reduce фуцкція повертає лише одне значення із послідовності яке відповідає логічній умові
 from functools import reduce
 
-j = reduce(lambda x, b: x * b, (1, 2, 3, 4, 50, 6))
-print(j)
+j = reduce(lambda x, b: x * b, (1, 2, 3, 4, 6)) #фукція перемножила кожне число із послідовності спочатку і до кінця
+print(type(j)) #res <class 'int'>
+print(j) #res 144
+
+
+###################### zip function #############################
+#фукуція ZIP обєднує в кортежі декілька ітеруємих послідовностей
+#https://www.youtube.com/watch?v=UDthAJmD3EQ
+
+e = "abcde" #послідовність стрінга
+o = [1, 2, 3, 4, 5] # послідовність набір чисел
+
+res = zip(e, o)
+print(list(res)) #форматували результат в ліст res: [('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', 5)]
