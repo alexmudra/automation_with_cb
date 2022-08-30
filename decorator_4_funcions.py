@@ -28,7 +28,6 @@ def test_two_numbers(expected, actual):
 #
 #     return a + b
 
-
 if __name__ == "__main__":
     import random
 
