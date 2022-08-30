@@ -42,3 +42,13 @@ if __name__ == "__main__":
     print(f'{dummy_concatenator(2, True, "lala", bomb=True, emporer="Akbar", zen=False)}\n\n')
 
     test_two_numbers(actual=a, expected=b)
+
+################## приклад закривання CLOSURE ################################
+
+def count_sec_down(num: int):
+    def next():
+        nonlocal num # nonlocal - означає, що ми беремо перемінну із не вищої області видимості
+        r = num #записуємо num в перемінну r
+        num = num - 1
+        return r
+    return  next() #next  - це і є обєкт замикання
