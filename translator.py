@@ -10,6 +10,10 @@ print(f"Мова на яку потрібно перекластиє: {translati
 print(f"Вимова буде така: {translation_rslt.pronunciation}")
 
 
+translation_rslt_to_ukr = translator.translate("Привіт",src='uk',dest='en')
+print(translation_rslt_to_ukr.text) #Hello
+
+
 # quotes_file = open(r"C:\Users\alex\PycharmProjects\automation_with_cb\quotes.txt")
 # print(quotes_file)
 # type(quotes_file)
